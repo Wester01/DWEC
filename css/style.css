@@ -1,0 +1,68 @@
+body{
+	display: inline-flex;
+	font-family: DejaVu Sans;
+}
+.err{
+	display: none;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 675px;
+	border: solid red 1.5px;
+	margin-bottom: 5%;
+	margin-right: 15%;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background: lightgrey;
+	box-shadow: 1px 1px 20px 10px;
+}
+h3{
+	width: 100%;
+	text-align: center;
+}
+label{
+	display: flex;
+	flex-direction: row;
+	width: 67%;
+	justify-content:  space-between;
+	margin-bottom: 0.5%;
+	padding: 8px;
+	border-radius: 10px;
+	background: #EEEEEE;
+
+}
+.boton{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+
+}
+.boton input{
+	padding:20px;
+	background: lightblue;
+	border-radius: 15px;
+}
+
+.boton input:hover{
+	background: #5CFA37;
+}
+
+#login{
+	height: 350px;
+}
+
+#botonRegistro{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	padding:20px;
+	background: lightblue;
+	border-radius: 15px;
+}
+
+#botonRegistro input:hover{
+	background: #5CFA37;
+}

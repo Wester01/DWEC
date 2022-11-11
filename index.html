@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!--Registro-->
+	<form action="" class="form" name="register">
+		<h3>Registro</h3>
+		<label for="">
+			Nombre: <input id="nombre" type="text" required placeholder="Obligatorio">
+		</label>
+		<label for="" class="err" id="no_name"></label>
+
+		<label for="">
+			Apellido: <input id="apellido" type="text" require placeholder="Obligatorio">
+		</label>
+		<label for="" class="err" id="no_ape"></label>
+
+		<label for="">
+			Correo: <input id="correo" type="text" required placeholder="Obligatorio">
+		</label>
+		<label for="" class="err" id="correoMal"></label>
+
+		<label for="">
+			Contraseña: <input id="pass" type="password" required placeholder="Obligatorio">
+		</label>
+		<label for="" class="err" id="err_pass"></label>
+
+		<label for="">
+			Confirmar contraseña: <input id="con_pass" type="password" required placeholder="Obligatorio">
+		</label>
+		<label for="" class="err"></label>
+
+		<label for="" id="label_s">Sexo (opcional): 
+			<select name="sexo" id="sexo">
+				<option value="sample" >Seleccione su sexo</option>
+				<option value="hombre">Hombre</option>
+				<option value="mujer">Mujer</option>
+				<option value="otro">Sin especificar</option>
+			</select>
+		</label>
+		<label for="" class="err" id="sex_er"></label>
+
+		<label for="" id="fnac">
+			Fecha de nacimiento: <input type="date" placeholder="Opcional" id="nacimiento">
+		</label>
+		<label for="" class="err"></label>
+
+		<label for="" id="direccion">
+			Dirección: <input type="text" placeholder="Opcional" id="dir_in">
+		</label>
+		<label for="" class="err"></label>
+
+		<label for="" id="pais">
+			País <input id="pais_in" type="text" placeholder="Opcional">
+		</label>
+		<label for="" class="err"></label>
+
+		<label for="" id="tarjeta">
+			Nº de tarjeta de crédito: <input id="tar_in" type="text" placeholder="Opcional">
+		</label>
+		<label for="" class="err" id="card_fail"></label>
+
+		<label for="" id="notificaciones">
+			Activar notificaciones del sitio: <input id="notif_check" type="checkbox">
+		</label>
+		<label for="" class="err"></label>
+
+		<label for="" id="suscripcion">
+			Deseo suscribirme a la revista digital: <input id="sus_check" type="checkbox">
+		</label>
+		<label for="" class="err"></label>
+
+		<button type="submit" id="botonRegistro">Enviar</button>
+		<!--<label for="" class="boton" id="botonRegistro"><input type="submit" value="Enviar formulario"></label>-->
+
+	</form>
+
+	<!--Login-->
+	<form action="" class="form" name="login">
+		<h3>Log-in</h3>
+		<label for="">Correo: <input required type="text" id="correo_login" placeholder="Obligatorio"></label>
+		<label for="" class="err"></label>
+		<label for="">Contraseña: <input required id="pass" type="password" placeholder="Obligatorio"></label>
+		<label for="">Confirmar contraseña: <input required id="con_pass" type="password" placeholder="Obligatorio"></label>
+		<label for="" id="err_pass" class="err"></label>
+		<button type="submit" id="botonRegistro">Enviar</button>
+	</form>
+
+
+
+<script type="text/javascript" src="js/validate.js"></script>
+</body>
+</html>
